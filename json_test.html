@@ -1,7 +1,18 @@
+<title>
+Artwork Info Json test
+</title>
 <p>
 This is a file with a script element.
 </p>
 
 <script>
 
+let des = '{"artwork":[' +
+'{"dateCreated":"2017","subject":"MetroidSamus" },' +
+'{"dateCreated":"2017","subject":"MetroidSamus" },' +
+'{"dateCreated":"2018","subject":"TunnelSnakeArbok" },' +
+'{"dateCreated":"2018","subject":"Peacock" }]}';
+const obj1 = JSON.stringify(des);
+const obj2 = JSON.parse(des);
+console.log(des);
 </script>
